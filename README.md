@@ -2,15 +2,16 @@
 ## Allemang Designs
 ### William R Allemang IV
 ### Capstone 450-1
+###### laravel.com
 
 Within this repo are files that can be public, and are reviewable. There are sensitive config/environment 
 files that need to stay hidden for security reasons. These files are to be assumed psuedo-code. To view
-the complete project please vist **exploremhg.com**.
+the complete project please visit **exploremhg.com**.
 
 
 ### app/
 ---
-App/ contains the controllers used for the application @ Http/Controllers. Marked Album for album, Pages for pages etc.
+App/ contains the controllers used for the application @ Http/Controllers. AlbumController for album, Pages for pages etc.
 
 Album.php & Photo.php act as data model classes. You will notice they contain SQL attributes as propertys i.e:
 ```php
@@ -23,7 +24,7 @@ This allows Laravel to use Object Relational Modeling (ORM) tools, programming S
 
 ### database/migrations
 ---
-/migrations/ contains tables that are ran via console commands to build tables and add on columns. I have seperate
+/migrations/ contains tables that are ran via console command to build tables and add on columns. I have seperate
 migration files, 'instances', that create a table vs add on a table:
 create_users_table:
 ```php
@@ -51,6 +52,12 @@ public function up()
     }
 ```
 
+```php
+//after file(s) are created
+//builds table in database
+php artisan migrate
+```
+
 ### public/
 ---
 public contains files that will be used by all pages on the website. css/ contains my custom
@@ -63,7 +70,7 @@ viewers can't access all photos being used by the site. 'symlinkcreate.php'.
 
 ### resources/
 ---
-resources contain different views, organized by functionality. Views are what the user sees. 
+resources contain different views, organized by purpose. Views are what the user sees. 
 Albums/ contains CRUD operations and photos display. This is true with pages & photos. inc/ 
 includes various parts that are reused over the site. Most importantly look at photo_layout.blade.php
 & album_layout.blade.php, you can see the algorithm I came up with to display albums and photos 
@@ -73,3 +80,4 @@ by the Homecontroller.php
 ---
 
 
+laravel.com
