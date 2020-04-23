@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.openSans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cabinFont {
+  font-family: 'Cabin', sans-serif;
+  font-size: 86px;
+}
+
+.slide1 {
+    background: url("../img/girl.jpg");
+}
+
+.slide2 {
+    background: url("../img/city.jpg");
+}
+
+.slide3 {
+    background: url("../img/mountainvalley.jpg");
+}
+
+.slide4 {
+    background: url("../img/creek.jpg");
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+#slideshow {
+    width: 100%;
+    height: 800px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#smallSlideshow {
+  width: 100vw;
+  height: 450px;
+  background-position: 0px -300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.nav-bg {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.instagram {
+  background: url("../img/insta.png");
+  width: 50px;
+  height: 50px;
+}
+
+/* Regular size header (index) */
+.heading {
+    color: white;
+    font-size: 62px;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+.mg {
+  width: 42%;
+  margin: auto;
+}
+
+.sub-heading {
+    width: 20%;
+    margin: 20px auto;
+}
+
+.bottom-header {
+  width: 47%;
+  margin: auto;
+}
+/* end regular size header (index) */
+
+/* start small size header (featured/other pages) */
+.small-heading {
+    color: white;
+    font-size: 62px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.small-mg {
+  width: 48%;
+  margin: auto;
+}
+
+.small-sub-heading {
+    width: 20%;
+    margin: 20px auto;
+}
+
+.small-bottom-header {
+  width: 47%;
+  margin: auto;
+}
+/* end small size header (featured/other pages) */
+
+/* Index content-container */
+.content-container {
+    background-color: white;
+    width: 100%;
+    height: 90%;
+    left: 0px;
+    top: 800px;
+    position: absolute;
+}
+
+/* featured/other pages content-container */
+.small-content-container {
+    background-color: white;
+    width: 100%;
+    height: 90%;
+}
+
+.content-header {
+    margin-top: 25px;
+    font-size: 68px;
+}
+
+.content-body {
+    margin-left: 0px;
+    text-indent: 15px;
+}
+
+/*home page images */
+
+.grey-bg {
+    background-color: rgba(153,153,153,1);
+}
+
+.box-shadow {
+  -webkit-box-shadow: 5px 5px 13px 5px rgba(153,153,153,1);
+  -moz-box-shadow: 5px 5px 13px 5px rgba(153,153,153,1);
+  box-shadow: 5px 5px 13px 5px rgba(153,153,153,1);
+}
+
+.photo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: auto;
+  height: 800px;
+}
+
+.bAndW  {
+    background-image: url(../img/b&w.jpg);
+    margin-top: 100px;
+}
+
+.christina   {
+    background-image: url(../img/christina.jpg);
+    margin-top: 50px;
+}
+
+.girlField   {
+    background-image: url(../img/girlField.jpg);
+    margin-top: 0px;
+}
+
+.bear    {
+    background-image: url(../img/bear.jpg);
+    margin-top: 75px;
+}
+
+.mountainLake  {
+    background-image: url(../img/mountainLake.jpg);
+    margin-top: 75px;
+}
+
+.elcap   {
+    background-image: url(../img/elcap.jpg);
+}
+/* Album photo layout styles */
+/* lightbox clickable */
+a.lightbox div {
+  width: 350px;
+  height: 350px;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  margin: 94px 20px 20px 20px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Styles the lightbox, removes it from
+sight and adds the fade-in transition */
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,.7);
+  height: 75%;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
+  z-index: 999;
+}
+
+/* Styles the lightbox image, centers
+it vertically and horizontally, adds
+the zoom-in transition and makes it
+responsive using margin and absolute
+positioning */
+.lightbox-target div {
+  /*width: auto;
+  height: auto;*/
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  /*border: 3px solid white;*/
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  box-sizing: border-box;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Styles the close link, adds the
+slide down transition */
+a.lightbox-close {
+  display: block;
+  width:50px;
+  height:50px;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate
+an image from the close link */
+a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top:10px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an
+image from the close link */
+a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top:10px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to
+perform the animations upon clicking the
+.lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+/* top: 0%*/
+top: 75px;
+bottom: 0;
+}
+
+.lightbox-target:target div {
+max-height: 100%;
+max-width: 100%;
+}
+
+/*top positioning*/
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
+
+
+footer {
+  position: fixed;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.bottom {
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+.bottom-text {
+   color: white;
+   text-decoration: none;
+}
+
+.bottom-btn {
+    float: right;
+    margin: 25px 200px 0px 0px;
+}
+
+.nav-list {
+     list-style-type: none;
+      float: left;
+}
+
+/* Google fonts */
+.sansFont {
+  font-family: 'Source Sans Pro', sans-serif;}
+
+.dosisFont {
+  font-family: 'Dosis', sans-serif;
+}
+
+.cabinFont {
+  font-family: 'Cabin', sans-serif;
+  font-size: 86px;
+}
+
+/*
+ * Starting Screen size optmizations
+*/
+/* 1200px - 992px */
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .mg {
+    width: 51%;
+  }
+
+  .photo {
+    height: 685px;
+  }
+
+  /* small header pages */
+  .small-mg {
+    width: 55%;
+    margin: auto;
+  }
+
+  .small-sub-heading {
+      width: 30%;
+  }
+
+  #smallSlideshow {
+    background-position: 0px -250px;
+  }
+} /* 1200px or less @media */
+
+/* 991px - 768px */
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .mg {
+    width: 65%;
+  }
+
+  .sub-heading {
+      width: 28%;
+  }
+
+  .photo {
+    height: 405px;
+    width: 272px;
+  }
+
+  .bAndW  {
+      margin-top: 50px;
+      margin-top: 50px;
+      width: 272px;
+      margin-left: 50px;
+  }
+
+  .christina   {
+      margin-top: 25px;
+  }
+
+  .girlField   {
+      margin-top: 0px;
+      width: 272px;
+      margin-left: 50px;
+  }
+
+  .bear    {
+    margin-top: 40px;
+  }
+
+  .mountainLake  {
+      margin-top: 40px;
+      width: 272px;
+  }
+
+  /* small header pages */
+  .small-mg {
+    width: 65%;
+    margin: auto;
+  }
+
+  .small-sub-heading {
+      width: 35%;
+  }
+
+  #smallSlideshow {
+    background-position: 0px -100px;
+  }
+} /* 991px - 768px @media */
+
+/* 767px 708px */
+@media only screen and (max-width: 767px) and (min-width: 708px) {
+  .mg {
+    width: 70%;
+  }
+
+  .sub-heading {
+      width: 40%;
+  }
+
+  .photo {
+    height: 500px;
+    margin: auto;
+  }
+
+  .elcap {
+    width: 335px;
+    margin-top: 25px;
+  }
+
+  .bAndW  {
+      margin-top: 25px;
+      width: 335px;
+  }
+
+  .christina   {
+      margin-top: 25px;
+      width: 335px;
+  }
+
+  .girlField   {
+      margin-top: 25px;
+      width: 335px;
+  }
+
+  .bear    {
+    margin-top: 25px;
+    width: 335px;
+  }
+
+  .mountainLake  {
+      margin-top: 25px;
+      width: 335px;
+  }
+
+  /* small header pages */
+  .small-mg {
+    width: 70%;
+  }
+
+  .small-sub-heading {
+      width: 40%;
+  }
+
+  #smallSlideshow {
+    background-position: 0px -50px;
+    width: 100vmax;
+
+  }
+} /* 767px 708px @media */
+
+/* 767px 300px */
+@media only screen and (max-width: 707px) and (min-width: 300px) {
+  .cabinFont {
+    font-size: 50px;
+  }
+
+  .mg {
+    width: 75%;
+  }
+
+  .sub-heading {
+    width: 48%;
+  }
+
+  .bottom-header {
+    width: 70%;
+  }
+
+  .photo {
+    height: 500px;
+    width: 335px;
+    margin: auto;
+  }
+
+  .elcap {
+    margin-top: 25px;
+  }
+
+  .bAndW  {
+      margin-top: 25px;
+  }
+
+  .christina   {
+      margin-top: 25px;
+  }
+
+  .girlField   {
+      margin-top: 25px;
+  }
+
+  .bear    {
+    margin-top: 25px;
+    width: 335px;
+  }
+
+  .mountainLake  {
+      margin-top: 25px;
+  }
+
+  /* small header pages */
+  .small-mg {
+    width: 70%;
+  }
+
+  .small-sub-heading {
+      width: 40%;
+  }
+
+  #smallSlideshow {
+    background-position: 0px 0px;
+
+  }
+
+}
+
+/* 420px 300px */
+@media only screen and (max-width: 420px) and (min-width: 300px) {
+
+  .sub-heading {
+    width: 60%;
+  }
+
+  .cabinFont {
+    font-size: 40px;
+  }
+
+  .photo {
+    width: 335px;
+  }
+
+  .elcap {
+    margin-top: 15px;
+  }
+
+  .bAndW  {
+      margin-top: 15px;
+  }
+
+  .christina   {
+      margin-top: 15px;
+  }
+
+  .girlField   {
+      margin-top: 15px;
+  }
+
+  .bear    {
+    margin-top: 15px;
+  }
+
+  .mountainLake  {
+      margin-top: 15px;
+  }
+
+} /* 420px 300px @media */
