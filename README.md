@@ -8,7 +8,7 @@ files that need to stay hidden for security reasons. These files are to be assum
 the complete project please vist **exploremhg.com**.
 
 
-###app/
+### app/
 ---
 App/ contains the controllers used for the application @ Http/Controllers. Marked Album for album, Pages for pages etc.
 
@@ -21,7 +21,7 @@ Album.php & Photo.php act as data model classes. You will notice they contain SQ
 ```
 This allows Laravel to use Object Relational Modeling (ORM) tools, programming SQL in class syntax
 
-###database/migrations
+### database/migrations
 ---
 /migrations/ contains tables that are ran via console commands to build tables and add on columns. I have seperate
 migration files, 'instances', that create a table vs add on a table:
@@ -51,7 +51,7 @@ public function up()
     }
 ```
 
-###public/
+### public/
 ---
 public contains files that will be used by all pages on the website. css/ contains my custom
 css sheet. img/ contains photos that are static instances, like the landing page photos and 
@@ -61,7 +61,7 @@ except Laravel. We use this symlink to store uploaded images tracked by the data
 viewers can't access all photos being used by the site. 'symlinkcreate.php'.
 
 
-###resources/
+### resources/
 ---
 resources contain different views, organized by functionality. Views are what the user sees. 
 Albums/ contains CRUD operations and photos display. This is true with pages & photos. inc/ 
