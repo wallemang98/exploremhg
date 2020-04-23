@@ -55,7 +55,7 @@ public function up()
 ```php
 //after file(s) are created
 //builds table in database
-php artisan migrate
+$php artisan migrate
 ```
 
 ### public/
@@ -77,7 +77,6 @@ includes various parts that are reused over the site. Most importantly look at p
 in a organized way, while leaving room for future functionality. The email.blade.php is how contact
 emails are structured. The backend dashboard can be shown on home.blade.php. home.blade.php is controlled
 by the Homecontroller.php
----
 
 
 laravel.com
