@@ -2,7 +2,7 @@
 ## Allemang Designs
 ### William R Allemang IV
 ### Capstone 450-1
-###### laravel.com
+###### Check it out live here exploremhg.com
 
 Within this repo are files that can be public, and are reviewable. There are sensitive config/environment 
 files that need to stay hidden for security reasons. These files are to be assumed psuedo-code. To view
